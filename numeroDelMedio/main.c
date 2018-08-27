@@ -8,7 +8,7 @@ int main()
     int num3;
     int maximo;
     int minimo;
-    int numeroDelMedio = 0;
+    int numeroDelMedio;
 
     printf("Ingrese numero 1: \n");
     scanf("%d", &num1);
@@ -38,12 +38,15 @@ int main()
         }
     }
 
-    if(num2 < maximo && num2 > minimo){
-        numeroDelMedio = num2;
-        printf("El numero del medio es: %d", numeroDelMedio);
-    }else{
+    if(num1 == num2 || num1 == num3 || num2 == num3){
         printf("No hay numero del medio");
-        }
+    }
+
+    if(num1 != minimo && num1 != maximo){
+        numeroDelMedio = num1;
+        printf("El numero del medio es: %d", numeroDelMedio);
+    }
+
 
     return 0;
 }
