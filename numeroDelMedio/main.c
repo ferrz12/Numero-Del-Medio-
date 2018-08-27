@@ -42,8 +42,18 @@ int main()
         printf("No hay numero del medio");
     }
 
-    if(num1 != minimo && num1 != maximo){
+    if(num1 > minimo && num1 < maximo){
         numeroDelMedio = num1;
+        printf("El numero del medio es: %d", numeroDelMedio);
+    }
+
+    if(num2 > minimo && num2 < maximo){
+        numeroDelMedio = num2;
+        printf("El numero del medio es: %d", numeroDelMedio);
+    }
+
+    if(num3 > minimo && num3 < maximo){
+        numeroDelMedio = num3;
         printf("El numero del medio es: %d", numeroDelMedio);
     }
 
